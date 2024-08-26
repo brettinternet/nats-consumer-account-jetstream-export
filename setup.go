@@ -197,6 +197,7 @@ func createUserAccount(oskp nkeys.KeyPair, claim func(ac *jwt.AccountClaims)) (*
 	return &accountResolution{apk, aJWT}, creds, nil
 }
 
+// a system account is necessary to enable jetstream on the server
 func createSystemAccount(oskp nkeys.KeyPair) (*accountResolution, []byte, error) {
 	return createUserAccount(oskp, func(ac *jwt.AccountClaims) {
 		ac.Name = "SYS"
