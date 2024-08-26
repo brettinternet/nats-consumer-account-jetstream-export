@@ -9,3 +9,5 @@ Run with `./run.sh` or do the following:
 1. Run application with `go run ./main.go`
 
 See related issue: https://github.com/nats-io/nats.go/issues/1703
+
+Possibly related issue: https://github.com/nats-io/nats.go/issues/1622
